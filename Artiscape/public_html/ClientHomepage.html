@@ -10,35 +10,51 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <style>
             .log{
                 float: right;
-                margin: 2;
+                margin: 10px;
+            }
+            th, td{
+                border: 1px solid black;
+            }
+            th:not(#noBorder){
+                background-color: lightblue;
+            }
+            caption{
+                float: left;
             }
             #ClientInfo{
-                border: 10em black;
+                border: 1px solid black;
+            }
+            body{
+                margin-left: 10px;
+                margin-right: 10px;
             }
         </style>
       </head>
 
       <body>
         <header>
-            <a href="index.html"><img src="" alt="Logo"/></a>
-            <a class="log">Log-out</a>
+            <a href="index.html"><img src="" alt="Logo"/></a> <!--linke to??-->
+            <a class="log" href="index.html">Log-out</a>
           </header>
 
         <main>
+            <!--Part#1-->
             <h2>Welcome Sara</h2>
 
+            <!--Part#2-->
             <div id="ClientInfo">
                 <p>Name: </p>
                 <p>email: </p>
             </div>
             <br>
+            <!--Part#3-->
             <div id="Designers">
                 <form action="" method="Post" id="Category">
                     <label>Select Category: </label>
                     <select>
                         <option></option>
                     </select>
-                    <submit name="Filter"></submit>
+                    <input type="submit" value="Filter">
                 </form>
 
                 <table>
@@ -47,40 +63,34 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     <tr>
                         <th>Designer</th>
                         <th>Specialty</th>
-                        <th style="border: none;"></th>
+                        <th style="border: none;" id="noBorder"></th>
                     </tr>
                     
                     <tr>
-                        <td><a><img src="" alt="Logo"></a> <br>
-                        <a>brand Name</a></td>
+                        <td><a href="portfolio.html"><img src="" alt="Logo"><br>
+                            brand Name</a></td>
 
                         <td>Modern, Country</td>
 
-                        <td><a>Request Design Consultation</a></td>
+                        <td><a href="RequestDesignConsultationpage.html">Request Design Consultation</a></td>
                     </tr>
 
                     <!--2nd-->
                     <tr>
-                        <th>Designer</th>
-                        <th>Specialty</th>
-                        <th></th>
-                    </tr>
-                    
-                    <tr>
                         <td><a><img src="" alt="Logo"></a> <br>
-                        <a>brand Name</a></td>
+                        <a href="designPortfoliopage.html">brand Name</a></td>
 
                         <td>Modern, Country</td>
 
-                        <td><a>Request Design Consultation</a></td>
+                        <td><a href="RequestDesignConsultationpage.html">Request Design Consultation</a></td>
                     </tr>
                 </table>
             </div>
             <br><br>
-            <div id="Request">
-                <caption>Previous Design Consultation Requests</caption>
 
+            <div id="Request">
                 <table>
+                    <caption>Previous Design Consultation Requests</caption>
                     <tr>
                         <th>Designer</th>
                         <th>Room</th>
