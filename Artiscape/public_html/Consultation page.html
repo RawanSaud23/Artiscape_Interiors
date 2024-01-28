@@ -5,7 +5,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Consultation</title>
+        <title>Consultation page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="ArtiScape.css">
@@ -47,44 +47,47 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
           input[type="submit"]:hover {
             background-color: #800080;
           }
+          #Requestinfo{
+        margin:auto;
+        text-align: left;
+        padding: .5% .5%;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
         </style>
     </head>
     <body>
         
         <header>
             <nav>
-                <a href="ClientHomepage.html"><img id="logo" src="images/Logo.png" alt="Logo"/></a>            
+                <a href="Designer.html"><img id="logo" src="images/Logo.png" alt="Logo"/></a>            
             </nav>
         </header>
+        
         <main>
            <div class="container">
-            <form action="" method="post">
+            <form action="" method="post" onsubmit="return redirectToPage()">
           
-                      <label for="Room">Room type
+                      <label >Request Information
+                      </label> 
+                      <div id="Requestinfo">
+                        Client: Sarah Ahmad<br>
+                        Room: Living Room<br>
+                        Dimensions: 4*5m<br>
+                        Design category: Modern<br>
+                        Color Preferences: Beige and green<br>
+                        Date: 9/1/2024
+        
+                    </div>
+                      
+                      <br>
 
-                      <select id="RoomType" name="RoomType">
-                        <option value="LivingR">Living Room</option>
-                        <option value="bedroom">bedroom</option>
-                        <option value="Kitchen">Kitchen</option>
-                      </select></label> <br>
-
-                  <label for="RoomD">Room dimension
-
-                  <input type="text" id="width" name="widthD" placeholder="width (m)">
-                  <input type="text" id="length" name="lengthD" placeholder="length (m)">
-                </label><br>
-
-                  <label for="category">Design category
-
-                  <select id="country" name="country">
-                    <option value="Modern">Modern</option>
-                    <option value="Coasal">Coasal</option>
-                    <option value="Minimalist">Minimalist</option>
-                  </select></label><br>
-
-                  <label for="subject">Color Preferences
+                  <label >Consultation:
 
                   <textarea id="subject" name="subject" placeholder=""></textarea></label><br>
+                  <label>Upload Image:</label>
+                  <input type="file" name="image" value="Choose File"><br><br>
 
                 <input type="submit" value="Submit">
             </form>
@@ -171,5 +174,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         </p>
       </section>
     </footer>
+    <script>
+      function redirectToPage() {
+      window.location.href = 'Designer.html';
+      return false;}
+
+  </script>
     </body>
 </html>
