@@ -8,6 +8,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 */
 
 /*--------------------------------------------Commen css-------------------------------------------------------------*/
+/*header*/
+#logo {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .log{ /* logout layout*/
+                float: right;
+                margin-left: 950px;
+            }
+
+
 * {
     margin: auto;
     padding: auto;
