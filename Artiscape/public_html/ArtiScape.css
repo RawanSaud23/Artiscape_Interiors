@@ -9,10 +9,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 
 /*--------------------------------------------Commen css-------------------------------------------------------------*/
 /*header*/
+
+header nav {
+    height: 50px;
+}
+
 #logo {
                 position: absolute;
                 top: 0;
                 left: 0;
+                width: 230px;
+                height: 100px;
             }
 
             .log{ /* logout layout*/
