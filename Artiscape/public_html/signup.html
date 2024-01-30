@@ -20,7 +20,7 @@ form{
 
 
           /* Form submit button */
-          input[type="submit"] {
+       button{
             background-color: #9678b6;
             color: white;
             padding: 10px 20px;
@@ -28,7 +28,7 @@ form{
           }
         
           /* Form submit button hover effect */
-          input[type="submit"]:hover {
+        button:hover {
             background-color: #800080;
           }
           input[type="email"], input[type="password"], input[type="text"]{
@@ -63,7 +63,7 @@ text-align: center;
 <body>
     <header>
         <nav>
-            <a href="Designer.html"><img id="logo" src="images/Logo.png" alt="Logo"/></a>            
+            <a href="index.html"><img id="logo" src="images/Logo.png" alt="Logo"/></a>            
         </nav>
     </header>
     <div id="top">
@@ -81,7 +81,7 @@ text-align: center;
 
 <form method="post" id="designerform">
     <fieldset>
-<legend style="margin: 0;"> Designer information</legend>
+<legend> Designer information</legend>
 <label>First  name: <input type="text" name="fname"></label> <br><br>
 <label>Last  name: <input type="text" name="lname"></label><br><br>
 <label>Email address: <input type="email" name="email"></label><br><br>
@@ -90,7 +90,7 @@ text-align: center;
 
 <br>
 <fieldset>
-    <legend style="margin: 0;"> Brand information</legend>
+    <legend> Brand information</legend>
     <label>Brand  name: <input type="text" name="brand"></label> <br><br>
     <label>Logo: <input type="file" name="logo"></label><br><br>
     <label>Speciality: </label> 
@@ -102,7 +102,7 @@ text-align: center;
     </fieldset>
     <br>
     <div class="buttons">
-    <input type="submit"  value="Sign-up" onclick="fun1()">
+        <button type="button" onclick="window.location.href='Designerhomepage.html'">signup</button>
     </div>
 </form>
 
@@ -112,7 +112,7 @@ text-align: center;
 
     <form method="post" id="clientform" >
         <fieldset>
-    <legend style="margin: 0;" > Client information</legend>
+    <legend> Client information</legend>
     <label>First  name: <input type="text" name="fname"></label> <br><br>
     <label>Last  name: <input type="text" name="lname"></label><br><br>
     <label>Email address: <input type="email" name="email"></label><br><br>
@@ -121,7 +121,7 @@ text-align: center;
 </fieldset>
 <br>
 <div class="buttons">
-<input type="submit"  name="sign" value="Sign-up" onclick="fun2()">
+    <button type="button" onclick="window.location.href='ClientHomepage.html'">signup</button>
 </div>
     </form>
     <footer>
