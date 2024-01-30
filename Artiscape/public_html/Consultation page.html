@@ -36,7 +36,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
           }
         
           /* Form submit button */
-          input[type="submit"] {
+          button {
             background-color: #9678b6;
             color: white;
             padding: 10px 20px;
@@ -44,7 +44,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
           }
         
           /* Form submit button hover effect */
-          input[type="submit"]:hover {
+          button:hover {
             background-color: #800080;
           }
           #Requestinfo{
@@ -89,7 +89,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                   <label>Upload Image:</label>
                   <input type="file" name="image" value="Choose File"><br><br>
 
-                <input type="submit" value="Submit">
+                <button type="button" onclick="window.location.href='Designerhomepage.html'">Submit</button>
             </form>
           </div>
         </main>
@@ -174,11 +174,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         </p>
       </section>
     </footer>
-    <script>
-      function redirectToPage() {
-      window.location.href = 'Designer.html';
-      return false;}
 
-  </script>
     </body>
 </html>
