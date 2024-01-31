@@ -9,10 +9,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <title>Client</title>
         <link rel="stylesheet" href="ArtiScape.css">
         <style>
-            
             table{
-                border-collapse: collapse;
-                width: 100%;  
+                border-collapse: collapse; /*No spaces between the cells*/
+                width: 100%;  /*as same as the page width*/ 
             }
             th, td{
                 border: 1px solid black;
@@ -24,7 +23,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             td a img{
                 width: 30%;
             }
-            th:not(#noBorder){
+            th:not(#noBorder){ /*No background color for the last th*/
                 background-color: #C3B1E1;
             }
             caption{
@@ -32,7 +31,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 font-size:x-large;
                 margin-bottom: 1em;
             }
-            #ClientInfo{ /* name and email  */
+            #ClientInfo{ /* name and email at top of the page */
                 background-color: #E6E6FA;
                 padding: 5px;
                 margin: auto;
@@ -40,7 +39,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 flex-wrap: wrap;
                 justify-content: center;
             }
-            #Category{ /* filter */
+            #Category{ /*Specialty filter */
                 float: right;
             }
         </style>
@@ -64,7 +63,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             </div>
             <br>
 
-            <div id="Designers">
                 <form action="" method="post" id="Category">
                     <label>Select Category: </label>
                     <select>
@@ -78,15 +76,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 
                 <table>
                     <caption>Interior Designers</caption>
-                    <!--1st-->
+                    <!--1stDesigner-->
                     <tr>
                         <th>Designer</th>
                         <th>Specialty</th>
-                        <th style="border: none;" id="noBorder"></th>
+                        <th style="border: none;" id="noBorder"></th> <!--inline style for no border in last th cell-->
                     </tr>
                     
                     <tr>
-                        <td><a href="portfolio.html"><img src="images/ninteriors.png" alt="Logo"><br>
+                        <td><a href="portfolio.html"><img src="images/ninteriors.png" alt="Designer brand logo"><br>
                             NInteriors</a></td>
 
                         <td>Modern, Country</td>
@@ -94,20 +92,20 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                         <td><a href="RequestConsultation.html">Request Design Consultation</a></td>
                     </tr>
 
-                    <!--2nd-->
+                    <!--2nd Designer-->
                     <tr>
-                        <td><a href="portfolio.html"><img src="images/defanceConcepts.png" alt="Logo"><br>
-                            defance Concepts</a></td>
+                        <td><a href="portfolio.html"><img src="images/defanceConcepts.png" alt="Designer brand logo"><br>
+                            defence Concepts</a></td>
 
                         <td>Modern, Country</td>
 
                         <td><a href=" RequestConsultation.html">Request Design Consultation</a></td>
                     </tr>
                 </table>
-            </div>
+
             <br><br>
             <!--Part#4-->
-            <div id="Request">
+
                 <table>
                     <caption>Previous Design Consultation Requests</caption>
                     <tr>
@@ -121,7 +119,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     </tr>
                     <!--Data-->
                     <tr>
-                        <td><a><img src="images/InteriorDessign.png" alt="logo brand"> </a>
+                        <!--1st Consultation Request-->
+                        <td><a><img src="images/InteriorDessign.png" alt="Designer brand logo"> </a>
                         <br>Interior Design</td>
 
                         <td>Living Room</td>
@@ -131,23 +130,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                         <td>9/1/2024</td>
                         <td>pending consultation</td>
                     </tr>
-                    <!--2nd data-->
+                    <!--2nd Consultation Request-->
                     <tr>
-                        <td><a><img src="images/defanceConcepts.png" alt="logo brand"> </a>
-                            <br>Defance Concepts</td>
+                        <td><a><img src="images/defanceConcepts.png" alt="Designer brand logo"> </a>
+                            <br>Defence Concepts</td>
     
                             <td>bedroom</td>
                             <td>3x4m</td>
-                            <td>Coasal</td>
+                            <td>Coastal</td>
                             <td>Blue and White</td>
                             <td>7/1/2024</td>
                             <td>consultation declined</td>
                     </tr>
 
-                    <!--3nd data-->
+                    <!--3nd Consultation Request-->
                     <tr>
-                        <td><a><img src="images/DesignFuniture.png" alt="logo brand"> </a>
-                            <br>Design Funiture</td>
+                        <td><a><img src="images/DesignFuniture.png" alt="Designer brand logo"> </a>
+                            <br>Design Furniture</td>
     
                             <td>Kitchen</td>
                             <td>3x3m</td>
@@ -158,7 +157,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                                 <br>Simple living room design with light colors.</td>
                     </tr>
                 </table>
-            </div>
+
         </main> 
           <footer>
       <section id="footer">
