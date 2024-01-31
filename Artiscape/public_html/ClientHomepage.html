@@ -42,6 +42,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             #Category{ /*Specialty filter */
                 float: right;
             }
+            /* Form submit button (Filter) */
+          button {
+            background-color: #9678b6;
+            color: white;
+            border-radius: 4px;
+          }
+        
+          /* Form submit button (Filter) hover effect */
+          button:hover {
+            background-color: #800080;
+          }
         </style>
       </head>
 
@@ -71,7 +82,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                         <option>Bohemian</option>
                         <option>Country</option>
                     </select>
-                    <input type="submit" value="Filter">
+                    <button type="button" value="Filter">Filter</button>
                 </form>
 
                 <table>
