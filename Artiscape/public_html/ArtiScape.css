@@ -15,27 +15,27 @@ header nav {
 }
 
 #logo {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 200px;
-                height: 100px;
-            }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100px;
+}
 
-            .log{ /* logout layout*/
-                float: right;
-                margin-left: 950px;
-            }
-
+.log{ /* logout layout*/
+    float: right;
+    margin-left: 950px;
+}
 
 * {
     margin: auto;
     padding: auto;
     }
+    
 header{
     background-color: #bc9af27b;
 }
-/*    header      */
+
 nav { 
     display: flex;
     align-items: center;
@@ -47,8 +47,8 @@ nav {
 main{
     margin: 10px;
 }
-/*    all links in the website      */
 
+/*       for all links in the website      */
 a:link{
     color: #800080;
     text-decoration: none;
@@ -58,44 +58,32 @@ a:hover{
     text-decoration:underline;
 }
 
-
-/*fotter*/
+/*footer*/
 .main-footer {
     padding: 30px 0;
     display: flex;
     justify-content: space-evenly;
-    /*background-color: #bc9af27b;*/
   }
   
   .main-footer h2 {
     font-size: 22px;
-    line-height: 117%;
-    color: black;
     margin-bottom: 10px;
     font-weight: 500;
   }
   
   .main-footer ul li a {
     color: black;
-    text-decoration: none;
   }
   
   footer {
     background-color: #bc9af27b;
-    border-top: 1px solid #bc9af27b;
     font-size: 17px;
     padding: 15px 5px;
     color: black;
     text-align: center;
   }
   
-  footer a {
-    text-decoration: none;
-    color: black;
-  }
-  
   .Us {
-    color: black;
     line-height: 2rem;
     text-align: left;
   }
@@ -107,6 +95,7 @@ a:hover{
     list-style: none;
     text-align: left;
   }
+  
   .Social ul {
     list-style: none;
     text-align: left;
