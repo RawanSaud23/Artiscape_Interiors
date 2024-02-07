@@ -24,7 +24,9 @@ header nav {
 
 .log{ /* logout layout*/
     float: right;
-    margin-left: 950px;
+    width: 30px;
+    height: 30px;
+    margin-left:1050px;
 }
 
 * {

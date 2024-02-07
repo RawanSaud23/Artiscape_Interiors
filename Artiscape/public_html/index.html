@@ -11,20 +11,36 @@ text-align: center;
 border-radius: 10pt ;
 max-width: 500px;
 margin: 10px auto;
- padding: 20px;
+ padding: 40px;
  background-color: #E6E6FA;
  border-radius: 5px;
 margin-bottom: 2em;
 }
+    
+           
+          
 
-buttton{
- margin: 1em;
-font-weight:bold ;
-background-color: #9678b6;
-color: white;
-padding: 10px 20px;
- border-radius: 4px;
-}
+         /* Form submit button */
+       button{
+            background-color: #9678b6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+          }
+        
+          /* Form submit button hover effect */
+        button:hover {
+            background-color: #800080;
+          }
+          
+          input[type="email"], input[type="password"], input[type="text"]{
+        width: 50%;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+       
+      }
 
 p{
  margin-top: 2em;  
@@ -52,15 +68,11 @@ a{
     <h1> Artiscape Interior</h1>
  <div id="login"> 
   
-    <br><br>
-<a href="login.html" style="border: solid #9678b6;
-border-radius: 4pt ; padding:3pt; background-color: #9678b6;">
-    Log-in
-
-</a>
+   
+   <button type="button" onclick="window.location.href='login.html'">Login</button>
 
 <p>New User? <a href="signup.html"> Sign-up</a>  </p>
-<br><br>
+
 </div>
 <footer>
     <section id="footer">

@@ -38,7 +38,13 @@ form{
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+         margin-bottom: 10px;
       }
+        input[type="checkbox"], input[type="file"]{
+                           margin-bottom: 10px;
+
+          }
+          
 
 
 fieldset{
@@ -71,9 +77,10 @@ text-align: center;
 
 
 <form method="post" >
-<label> User Type: </label>    
-<label> <input type="radio" name="type" value="designer" onchange="fun();" > Interior Designer    </label> 
-<label> <input type="radio" name="type" value="client" onchange="fun();" > Client  </label>
+<label> User Type:    
+<input type="radio" name="type" value="designer" onchange="fun();" > Interior Designer     
+ <input type="radio" name="type" value="client" onchange="fun();" > Client
+</label>
 </form>
 <br> 
 </div>
@@ -82,22 +89,23 @@ text-align: center;
 <form method="post" id="designerform">
     <fieldset>
 <legend> Designer information</legend>
-<label>First  name: <input type="text" name="fname"></label> <br><br>
-<label>Last  name: <input type="text" name="lname"></label><br><br>
-<label>Email address: <input type="email" name="email"></label><br><br>
-<label>Password: <input type="password" name="pass"></label><br><br>
+<label>First  name: <input type="text" name="fname"></label> <br>
+<label>Last  name: <input type="text" name="lname"></label><br>
+<label>Email address: <input type="email" name="email"></label><br>
+<label>Password: <input type="password" name="pass"></label><br>
 </fieldset>
 
 <br>
 <fieldset>
     <legend> Brand information</legend>
-    <label>Brand  name: <input type="text" name="brand"></label> <br><br>
-    <label>Logo: <input type="file" name="logo"></label><br><br>
-    <label>Speciality: </label> 
-    <label> <input type="checkbox" name="category" value="Modern"> Modern  </label> 
-    <label> <input type="checkbox" name="category" value="Country"> Country  </label> 
-    <label> <input type="checkbox" name="category" value="Coastal"> Coastal  </label> 
-    <label> <input type="checkbox" name="category" value="Bohemian"> Bohemian  </label> 
+    <label>Brand  name: <input type="text" name="brand"></label> <br>
+    <label>Logo: <input type="file" name="logo"></label><br>
+    
+    <label> Speciality: 
+     <input type="checkbox" name="category" value="Modern"> Modern  
+     <input type="checkbox" name="category" value="Country"> Country  
+     <input type="checkbox" name="category" value="Coastal"> Coastal  
+     <input type="checkbox" name="category" value="Bohemian"> Bohemian  </label>
     
     </fieldset>
     <br>
@@ -113,10 +121,10 @@ text-align: center;
     <form method="post" id="clientform" >
         <fieldset>
     <legend> Client information</legend>
-    <label>First  name: <input type="text" name="fname"></label> <br><br>
-    <label>Last  name: <input type="text" name="lname"></label><br><br>
-    <label>Email address: <input type="email" name="email"></label><br><br>
-    <label>Password: <input type="password" name="pass"></label><br><br>
+    <label>First  name: <input type="text" name="fname"></label> <br>
+    <label>Last  name: <input type="text" name="lname"></label><br>
+    <label>Email address: <input type="email" name="email"></label><br>
+    <label>Password: <input type="password" name="pass"></label><br>
 
 </fieldset>
 <br>
